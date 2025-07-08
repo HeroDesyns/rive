@@ -8,7 +8,8 @@
 
   <script>
     const rive = new Rive({
-      src: "slider_skeuomorphic.riv", // Replace with the URL of your Rive file
+      src: "https://cdn.jsdelivr.net/gh/HeroDesyns/rive@main/slider_skeuomorphic.riv
+", // Replace with the URL of your Rive file
       canvas: document.getElementById("riveCanvas"),
       autoplay: true,
       stateMachines: ["State Machine 1"], // Replace with your actual state machine name
