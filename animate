@@ -8,7 +8,7 @@
 
   <script>
     const rive = new Rive({
-      src: "your-file.riv", // Replace with the URL of your Rive file
+      src: "https://c984b3fe-1e92-4a39-99f1-f400540458f4.usrfiles.com/ugd/c984b3_fa5e6664f2804011a2bc4582b15ab97a.riv", // Replace with the URL of your Rive file
       canvas: document.getElementById("riveCanvas"),
       autoplay: true,
       stateMachines: ["State Machine 1"], // Replace with your actual state machine name
