@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <title>Rive Slider Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Load Rive WebGL runtime -->
   <script src="https://unpkg.com/@rive-app/webgl"></script>
-  <title>Rive Animation</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background: #f2f2f2;
+      background: #0a0a0a;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      max-width: 600px;
+      max-height: 600px;
+      background: transparent;
     }
   </style>
 </head>
 <body>
+
   <canvas id="riveCanvas" width="500" height="500"></canvas>
+
   <script>
-    const rive = new Rive({
-      src: "https://herodesyns.github.io/rive/slider_skeuomorphic.riv",
+    new Rive({
+      src: "https://cdn.jsdelivr.net/gh/HeroDesyns/rive@main/slider_skeuomorphic.riv",
       canvas: document.getElementById("riveCanvas"),
       autoplay: true,
       stateMachines: ["State Machine 1"],
       onStateChange: (event) => {
         if (event.data.includes("showconfirm")) {
+          // Send a message back to Wix or parent page if needed
           window.parent.postMessage("sliderComplete", "*");
         }
       }
     });
   </script>
+
 </body>
 </html>
