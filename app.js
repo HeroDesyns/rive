@@ -8,10 +8,9 @@ const links = {
 };
 
 const rive = new Rive({
-  src: 'home_menu_ui.riv', // replace with your file path relative to repo
+    src: 'home_menu_ui.riv',
   canvas: document.getElementById('rive-canvas'),
-  autoplay: true,
-  stateMachines: ['State Machine 1'], // match exact name in Rive editor
+  autoplay: true
   onLoad: () => {
     const inputs = rive.stateMachineInputs('State Machine 1');
 
