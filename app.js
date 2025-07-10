@@ -8,7 +8,7 @@ const links = {
 };
 
 const rive = new Rive({
-    src: 'home_menu_ui.riv',
+    src: 'like_heartbeat_animation.riv',
     canvas: document.getElementById('rive-canvas'),
     autoplay: true,
     stateMachines: ['State Machine 1'],
