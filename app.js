@@ -8,7 +8,7 @@ const links = {
 };
 
 const rive = new Rive({
-    src: 'https://c984b3fe-1e92-4a39-99f1-f400540458f4.usrfiles.com/ugd/c984b3_531289cb5a4b43218302ac7db649c3f1.riv',
+    src: 'home_menu_ui.riv',
     canvas: document.getElementById('rive-canvas'),
     autoplay: true,
     stateMachines: ['State Machine 1'],
